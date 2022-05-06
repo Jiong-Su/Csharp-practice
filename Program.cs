@@ -2,12 +2,14 @@
 using System.Globalization;
 
 
-//_players.Split(";").Where()
-//        .ToList()
-//        .ForEach(a => DateTime.Parse(a))
-//        .ToList()
+Console.WriteLine("Take the following string 'Davis, Clyne, Fonte, Hooiveld, Shaw, Davis, Schneiderlin, Cork, Lallana, Rodriguez, Lambert' and give each player a shirt number, starting from 1, to create a string of the form: '1.Davis, 2.Clyne, 3.Fonte' etc ");
 
-//        .ForEach(players => Console.WriteLine($"{players}"));
+
+_players.Split(";").Where()
+        .ToList()
+        .ForEach(a => DateTime.Parse(a))
+        .ToList()
+        .ForEach(players => Console.WriteLine($"{players}"));
 
 
 
